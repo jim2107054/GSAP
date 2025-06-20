@@ -1,7 +1,3 @@
-gsap.methods(targets,vars)
-    => targets = the objects whose properties we want to animate.
-    => vars = all properties/value we want to animate(ease,duration,delay,...)
-
 ✅ Basic Parameters
 delay:
     Animation shuru hobar aage kotokkhon wait korbe (second e)

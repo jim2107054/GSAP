@@ -1,5 +1,5 @@
 import React from 'react'
-import From from './../methods/From';
+import From from '../methods/gsap.from/From';
 
 const Basics = () => {
   return (
