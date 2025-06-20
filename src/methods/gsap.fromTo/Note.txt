@@ -1,0 +1,4 @@
+gsap.fromTo(targets,fromvars,tovars)
+
+Animation properties:
+in the note.txt file.
