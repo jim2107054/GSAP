@@ -1,0 +1,3 @@
+gsap.to(targets,vars)
+
+just like gsap.from
