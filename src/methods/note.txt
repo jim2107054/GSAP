@@ -1,0 +1,115 @@
+gsap.methods(targets,vars)
+    => targets = the objects whose properties we want to animate.
+    => vars = all properties/value we want to animate(ease,duration,delay,...)
+
+✅ Basic Parameters
+delay:
+    Animation shuru hobar aage kotokkhon wait korbe (second e)
+    ➤ Example: delay: 1 mane 1 second por animation start hobe.
+
+duration:
+    Animation ta koto time cholbe (default: 0.5 second)
+    ➤ Example: duration: 2 mane 2 second dhore animate korbe.
+
+ease:
+    Animation ta smoothly cholbe kina, ar tar feel (like bounce, elastic, etc)
+    ➤ Example: ease: "power2.inOut" mane slow → fast → slow effect dibe.
+
+✅ Identity & Initialization
+id:
+    Animation ke ekta unique naam/ID dao, pore khujte parbe
+    ➤ Example: id: "slideUp" diye pore gsap.getById("slideUp") diye access kora jabe.
+
+immediateRender:
+    Animation instantly render korbe kina
+    ➤ true dile immediately render hobe (from() use korle eta default hoy).
+
+inherit:
+    Parent timeline er default value inherit korbe kina
+    ➤ inherit: false dile parent timeline er kichu nibe na.
+
+
+
+✅ Performance
+lazy:
+Optimization er jonne kichu delay kore render korbe kina
+➤ Default: true. false dile immediately render korbe (bhalo control darkar hole use koro).
+
+
+✅ Repeat & Loop Control
+repeat:
+    Koto bar repeat hobe
+    ➤ repeat: 2 mane 1+2=3 bar cholbe, -1 dile infinite loop.
+
+repeatDelay:
+    Repeat er moddhe kotokkhon wait korbe
+    ➤ Example: repeatDelay: 1 mane 1 second pause between repeats.
+
+repeatRefresh:
+    Every repeat e value abar notun kore calculate korbe kina
+    ➤ Useful when using random or function based values.
+
+yoyo:
+    Forward + backward cholbe kina
+    ➤ yoyo: true mane animation abar reverse direction e cholbe.
+
+yoyoEase:
+    Yoyo part e alada ease use korte chaile eta set koro.
+
+✅ Control & State
+paused:
+    Animation pause obosthaye thakbe kina shuru thekei
+    ➤ paused: true dile shuru hobar poro cholbe na jodi tumi manually .play() na koro.
+
+reversed:
+    Shurutei reverse direction e thakbe kina
+    ➤ Usually used with .reverse() logic.
+
+runBackwards:
+    from() er moto effect dibe even to() use korleo
+    ➤ runBackwards: true mane start theke end e na, end theke start e jabe.
+
+✅ Others
+overwrite:
+    Same object-er onno animation ke stop korbe kina
+    ➤ overwrite: "auto" dile conflict holei kill korbe only those.
+
+stagger:
+    Ekadhik element ke ekta ekta kore kichu gap niye animate kora
+    ➤ stagger: 0.2 mane prottek target 0.2s gap e animate hobe.
+
+startAt:
+    Animation-er shurute kon value theke start korbe
+    ➤ Useful when you want to set initial state manually.
+
+keyframes:
+    Sequence animation korar jonne step by step object array use kora
+    ➤ Example:
+    keyframes: [
+    {x: 100, duration: 1},
+    {y: 100, duration: 0.5}
+    ]
+
+
+✅ Callback Functions
+Ei gula hocche function ja animation er different stage e call hoy:
+
+onStart:
+    Animation start howar shomoy ki function call hobe?
+
+onUpdate:
+    Animation cholte thaka shomoy je tick-e update hobe
+
+onComplete:
+    Animation shesh howar por
+
+onInterrupt:
+    Animation jokhon kill/kate dewa hoy
+
+onRepeat:
+    Jokhon repeat hobe bar bar
+
+onReverseComplete:
+    Reverse kore animation jokhon shesh point e ashe
+
+➤ Prottek callback e Params property ache (e.g., onCompleteParams) to pass data.
