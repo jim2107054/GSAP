@@ -1,0 +1,5 @@
+✅ Why use timeline() instead of multiple gsap.to()?
+Because:
+    You can chain animations easily
+    You can control everything together (pause, reverse, restart)
+    You can do overlapping animations with proper timing

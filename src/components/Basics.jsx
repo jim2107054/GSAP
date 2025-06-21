@@ -3,6 +3,7 @@ import From from '../methods/gsap.from/From';
 import FromTo from '../methods/gsap.fromTo/FromTo';
 import To from '../methods/gsap.To/To';
 import Set from '../methods/gsap.set/Set';
+import Timeline from '../methods/gsap.timeline/Timeline';
 
 const Basics = () => {
   return (
@@ -10,7 +11,8 @@ const Basics = () => {
       {/* <From/> */}
       {/* <FromTo/> */}
       {/* <To/> */}
-      <Set/>
+      {/* <Set/> */}
+      <Timeline/>
     </div>
   )
 }
