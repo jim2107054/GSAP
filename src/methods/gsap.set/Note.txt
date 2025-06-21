@@ -1,0 +1,7 @@
+gsap.set(targets,{properties})
+
+gsap.set => set the initial position of a item.
+
+gsap.set() hocche “just set kore dao instantly, animation chara”
+Tumi use korba jokhon tumi kono element ke immediately kono fixed position, opacity, scale e rakhte chau
+Use case: animation surur age initial setup
